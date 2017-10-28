@@ -36,7 +36,7 @@ class Baloon{
     ctx.drawImage(img1,this.x,this.y,this.size,this.size);
     // ctx.arc(this.x,this.y,50,0,Math.PI*2);
     ctx.fillStyle = '#fff';
-    // ctx.fillRect(this.x-1,this.y,2,20);
+    ctx.fillRect(this.x + this.size / 2 -1,this.y + this.size / 2,2,this.size*2);
     ctx.closePath();
     ctx.fill();
   }
