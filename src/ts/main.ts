@@ -1,13 +1,11 @@
+//canvas.config
 const canvas = <HTMLCanvasElement>document.getElementById('canvas');
-// canvas.width = 800;
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
 ctx.beginPath();
-ctx.fillStyle = '#E2E3E3';
-ctx.rect(0, 0, canvas.width, canvas.height);
-ctx.fill();
 
+//load svg
 const img0 = new Image();
 const img1 = new Image();
 const img2 = new Image();
@@ -22,18 +20,26 @@ class Baloon {
   private size: number;
   private shape: number;
   constructor() {
-    this.x = Math.random() * canvas.width;
+    this.size = Math.random() * 100 + 50;
+    this.x = Math.random() * canvas.width - this.size / 2;
     this.y = canvas.height;
     this.vy = Math.random() * 7;
-    this.size = Math.random() * 100 + 50;
     this.shape = Math.floor(Math.random() * 3);
   }
   move() {
     this.y -= this.vy;
   }
   draw() {
+    if (this.y < -200) return false;
+    this.move();
     ctx.beginPath();
-    ctx.drawImage(img1, this.x, this.y, this.size, this.size);
+    if (this.shape == 0) {
+      ctx.drawImage(img0, this.x, this.y, this.size, this.size);
+    } else if (this.shape == 1) {
+      ctx.drawImage(img1, this.x, this.y, this.size, this.size);
+    } else {
+      ctx.drawImage(img2, this.x, this.y, this.size, this.size);
+    }
     ctx.fillStyle = '#fff';
     ctx.fillRect(this.x + this.size / 2 - 1, this.y + this.size / 2, 2, this.size * 1.5);
     ctx.closePath();
@@ -41,20 +47,30 @@ class Baloon {
   }
 }
 
-let baloon = new Baloon();
-baloon.draw();
+//make 10 baloons with open
+let baloons = [];
+for (let i = 0; i < 10; i++) {
+  baloons.push(new Baloon());
+}
 
+//process when resize
 window.onresize = function() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 };
 
+//void draw(){}
 function update() {
   ctx.fillStyle = '#E2E3E3';
   ctx.rect(0, 0, canvas.width, canvas.height);
   ctx.fill();
-  baloon.move();
-  baloon.draw();
+  for (let i = 0; i < baloons.length; i++) {
+    baloons[i].move();
+    baloons[i].draw();
+  }
+  if (Math.floor(Math.random() * 20) == 1) {
+    baloons.push(new Baloon());
+  }
   setTimeout(function() {
     update();
   }, 30);
