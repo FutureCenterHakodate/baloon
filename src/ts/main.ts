@@ -19,11 +19,13 @@ class Baloon{
   private x: number;
   private y: number;
   private vy: number;
+  private size: number;
   private shape: number;
   constructor(){
     this.x = Math.random() * canvas.width;
     this.y = canvas.height;
     this.vy = Math.random()*10;
+    this.size = Math.random()*100 + 50;
     this.shape = Math.floor(Math.random()*3);
   }
   move(){
@@ -31,7 +33,7 @@ class Baloon{
   }
   draw(){
     ctx.beginPath();
-    ctx.drawImage(img1,this.x,this.y,50,50);
+    ctx.drawImage(img1,this.x,this.y,this.size,this.size);
     // ctx.arc(this.x,this.y,50,0,Math.PI*2);
     ctx.fillStyle = '#fff';
     // ctx.fillRect(this.x-1,this.y,2,20);
