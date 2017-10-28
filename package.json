@@ -1,0 +1,33 @@
+{
+  "name": "templete170928",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-open": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rework": "^1.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-typescript": "^3.2.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-wait": "0.0.2",
+    "gulp-webserver": "^0.9.1",
+    "node-sass-package-importer": "^5.0.0-alpha.15",
+    "rework-npm": "^1.0.0",
+    "sass-npm-import": "0.0.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize": "^0.3.1",
+    "normalize.css": "^7.0.0"
+  }
+}
