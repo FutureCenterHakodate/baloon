@@ -45,6 +45,17 @@ class Baloon {
     ctx.closePath();
     ctx.fill();
   }
+  touch(ex: number, ey: number) {
+    console.log(ex);
+    console.log(ey);
+    console.log(this.x);
+    console.log(this.u);
+    console.log(this.size);
+    if (this.y < -200) return false;
+    if (this.x < ex && ex < this.x + this.size && this.y < ey && ey < this.y + this.size) {
+      this.vy -= 1;
+    }
+  }
 }
 
 //make 10 baloons with open
@@ -58,6 +69,13 @@ window.onresize = function() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 };
+
+//onclick
+canvas.addEventListener('click', function(e) {
+  for (let i = 0; i < baloons.length; i++) {
+    baloons[i].touch(e.clientX, e.clientY);
+  }
+});
 
 //void draw(){}
 function update() {
