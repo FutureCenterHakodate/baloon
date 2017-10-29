@@ -46,11 +46,11 @@ class Baloon {
     ctx.fill();
   }
   touch(ex: number, ey: number) {
-    console.log(ex);
-    console.log(ey);
-    console.log(this.x);
-    console.log(this.u);
-    console.log(this.size);
+    // console.log(ex);
+    // console.log(ey);
+    // console.log(this.x);
+    // console.log(this.y);
+    // console.log(this.size);
     if (this.y < -200) return false;
     if (this.x < ex && ex < this.x + this.size && this.y < ey && ey < this.y + this.size) {
       this.vy -= 1;
