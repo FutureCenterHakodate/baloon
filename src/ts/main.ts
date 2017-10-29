@@ -27,7 +27,7 @@ class Baloon {
     this.vy = Math.random() * 7;
     this.shape = Math.floor(Math.random() * 3);
     this.bob = new Array();
-    let i = Math.floor(Math.random()*7) - 3;
+    let i = Math.floor(Math.random()*6) - 3;
     for(;i> 0;i--){
       this.vy -= 0.5;
       this.pushBob();
@@ -80,7 +80,7 @@ class Baloon {
       this.pushBob();
     }
   }
-  pushBob(){
+  pushBob(){//重り追加
     this.bob.push(Math.floor(Math.random() * 4));
   }
 }

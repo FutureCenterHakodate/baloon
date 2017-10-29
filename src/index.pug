@@ -3,6 +3,7 @@ html(lang="ja")
   head
     link(rel="stylesheet" type="text/css" href="css/style.css")
     link(href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous")
   body
     canvas#canvas このページはCanvasを使用しています。
     #topview
@@ -22,5 +23,7 @@ html(lang="ja")
     include activity.pug
     include information.pug
     include footer.pug
+    #page-top.page-top
+      img(src="img/backToTop.svg")
     script (function() {'use strict';})();
     script(src="js/main.js")
