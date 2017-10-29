@@ -27,7 +27,7 @@ Template Name: for baloon
         <p class="place">はこだてみらい館</p>
       </div>
     </div>
-    <div class="background background-white">
+    <div class="background background-white" id="playground">
       <div class="container">
         <h2>ふうせんの森<h3>
         <h3>～ちょうどよく、うかぶ　きもちよく、うかぶ～</h3>
@@ -42,9 +42,11 @@ Template Name: for baloon
         <p></p>
       </div>
     </div>
-    <div class="playground">
+    <div class="playground playgrond-yetclick" id="playground">
       <div class="container"></div>
-    </div>
+      <div class="message">
+        <p>クリックしておもりをのせてみよう！</p>
+      </div>
     <div class="background background-white">
       <div class="container">
         <h2>ちょうどよく浮かんだ風船たち</h2>
@@ -100,6 +102,7 @@ Template Name: for baloon
         <p>&copy;深沢アート研究所</p>
       </div>
     </footer>
+    <div class="page-top" id="page-top"><img src=<?php echo get_template_directory_uri(); ?> /dest/img/backToTop.svg">
     <script>
     var path = "<?php echo get_template_directory_uri();?>";
     </script>
