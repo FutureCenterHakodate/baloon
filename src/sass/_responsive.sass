@@ -1,0 +1,51 @@
+@media screen and (max-width: 640px)
+  =master
+    min-width: auto !important
+    padding: 3%
+    width: 94%
+    padding: 15px
+    width: calc(100% - 30px)
+    box-sizing:border-box
+  #topview
+    +master
+    grid-gap: 0
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: "subTitle cartoon title" "poster poster poster"
+    .cartoon
+      height: auto
+      width: 30vw
+      .item
+        width: 100%
+        height: auto
+        margin-bottom: 1vh
+    h1
+      justify-self: center
+    .subTitle
+      width: auto
+      justify-self: center
+      line-height: 1.2em
+    .poster
+      background: none
+      text-align: center
+  .background
+    +master
+  .container
+    +master
+  .playground
+    +master
+    .container
+      padding: 0
+    .message
+      font-size: 1.5em
+  .flex-pic-container
+    +master
+    margin: 0
+  .flex-pic-item
+    margin: 0 0 10px 0
+    width: 21%
+    height:
+  .info-item
+    +master
+    flex-flow: column wrap
+    h4
+      margin: 20px 0 0 0
