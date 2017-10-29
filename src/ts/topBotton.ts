@@ -11,12 +11,22 @@ window.onscroll = function() {
   ( getScrolled() > 500 ) ? topButton.classList.add( 'fade-in' ): topButton.classList.remove( 'fade-in' );
 };
 
+let vy = 30;
+
 //トップに移動する関数
 function scrollToTop() {
   var scrolled = getScrolled();
-  window.scrollTo( 0, Math.floor( scrolled / 2 ) );
-  if ( scrolled > 0 ) {
-    window.setTimeout( scrollToTop, 30 );
+  topButton.classList.add('top');
+  window.scrollTo( 0, scrolled - vy);
+  if(scrolled > 300){
+    window.setTimeout(scrollToTop, 30);
+    vy *= 1.1;
+  }else{
+    vy =30;
+    window.scrollTo( 0, 0);
+    setTimeout(function(){
+      topButton.classList.remove( 'top' );
+    }, 2000);
   }
 };
 
