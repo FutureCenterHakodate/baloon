@@ -15,9 +15,9 @@ try{
   img1.src = '../img/baloon-heart.png';
   img2.src = '../img/baloon-star.png';
 }catch(err){
-  img0.src = path + '/img/baloon-ellipse.png';
-  img1.src = path + '/img/baloon-heart.png';
-  img2.src = path + '/img/baloon-star.png';
+  img0.src = path + '/dest/img/baloon-ellipse.png';
+  img1.src = path + '/dest/img/baloon-heart.png';
+  img2.src = path + '/dest/img/baloon-star.png';
 }
 class Baloon {
   private x: number;

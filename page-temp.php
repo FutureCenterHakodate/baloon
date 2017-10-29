@@ -104,6 +104,6 @@ Template Name: for baloon
     var path = "<?php echo get_template_directory_uri();?>";
     </script>
     <script>(function() {'use strict';})();</script>
-    <script src="js/main.js"></script>
+    <script src=<?php echo get_template_directory_uri(); ?>/dest/js/main.js></script>
   </body>
 </html>
