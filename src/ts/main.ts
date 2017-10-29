@@ -12,15 +12,13 @@ const img2 = new Image();
 
 var path = document.getElementById( 'mainjs' ).getAttribute( 'path' );
 
-try{
-  img0.src = '../img/baloon-ellipse.png';
-  img1.src = '../img/baloon-heart.png';
-  img2.src = '../img/baloon-star.png';
-}catch(err){
-  img0.src = path + '/dest/img/baloon-ellipse.png';
-  img1.src = path + '/dest/img/baloon-heart.png';
-  img2.src = path + '/dest/img/baloon-star.png';
-}
+// img0.src = '../img/baloon-ellipse.png';
+// img1.src = '../img/baloon-heart.png';
+// img2.src = '../img/baloon-star.png';
+img0.src = path + '/dest/img/baloon-ellipse.png';
+img1.src = path + '/dest/img/baloon-heart.png';
+img2.src = path + '/dest/img/baloon-star.png';
+  
 class Baloon {
   private x: number;
   private y: number;

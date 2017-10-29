@@ -47,6 +47,7 @@ Template Name: for baloon
       <div class="message">
         <p>クリックしておもりをのせてみよう！</p>
       </div>
+    </div>
     <div class="background background-white">
       <div class="container">
         <h2>ちょうどよく浮かんだ風船たち</h2>
@@ -104,9 +105,9 @@ Template Name: for baloon
     </footer>
     <div class="page-top" id="page-top"><img src=<?php echo get_template_directory_uri(); ?> /dest/img/backToTop.svg">
     <script>
-    var path = "<?php echo get_template_directory_uri();?>";
+    
     </script>
     <script>(function() {'use strict';})();</script>
-    <script src=<?php echo get_template_directory_uri(); ?>/dest/js/main.js></script>
+    <script  id="mainjs" src=<?php echo get_template_directory_uri(); ?>/dest/js/main.js path = "<?php echo get_template_directory_uri();?>" ></script>
   </body>
 </html>
