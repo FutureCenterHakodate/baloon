@@ -9,9 +9,9 @@ ctx.beginPath();
 const img0 = new Image();
 const img1 = new Image();
 const img2 = new Image();
-img0.src = '../img/shapeBaloon-ellipse.svg';
-img1.src = '../img/shapeBaloon-hurt.svg';
-img2.src = '../img/shapeBaloon-star.svg';
+img0.src = '../img/baloon-ellipse.png';
+img1.src = '../img/baloon-heart.png';
+img2.src = '../img/baloon-star.png';
 
 class Baloon {
   private x: number;
