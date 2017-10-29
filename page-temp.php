@@ -8,6 +8,8 @@ Template Name: for baloon
   <head>
     <link rel="stylesheet" type="text/css" href=<?php echo get_stylesheet_directory_uri(); ?>/dest/css/style.css>
     <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   </head>
   <body>
     <canvas id="canvas">このページはCanvasを使用しています。</canvas>
@@ -27,7 +29,8 @@ Template Name: for baloon
     </div>
     <div class="background background-white">
       <div class="container">
-        <h2>ふうせんの森　～ちょうどよく、うかぶ　きもちよく、うかぶ～</h2>
+        <h2>ふうせんの森<h3>
+        <h3>～ちょうどよく、うかぶ　きもちよく、うかぶ～</h3>
         <p>はこだてみらい館にふうせんの森ができました。</p>ふうせんの森には様々な大きさの風船が 150 コ浮かんでいます。
         みどりいろの素材で作ったものを風船で浮かべてみましょう。<br><br>
         <h3>企画・監修：山添Joseph勇(美術家/深沢アート研究所)</h3>現代の子供の「つくる」を研究し、子供造形教室や子供造形ワークショップの実施、子供造形プログラム制作などを主な滑動とする美術家。<br><br>
@@ -93,7 +96,7 @@ Template Name: for baloon
     </div>
     <footer class="background">
       <div class="container">
-        <p>&copy;Future Center Hakodate </p>
+        <p>&copy;はこだてみらい館 </p>
         <p>&copy;深沢アート研究所</p>
       </div>
     </footer>
@@ -103,5 +106,4 @@ Template Name: for baloon
     <script>(function() {'use strict';})();</script>
     <script src="js/main.js"></script>
   </body>
-
 </html>
