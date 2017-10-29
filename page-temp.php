@@ -27,7 +27,7 @@ Template Name: for baloon
         <p class="place">はこだてみらい館</p>
       </div>
     </div>
-    <div class="background background-white" id="playground">
+    <div class="background background-white">
       <div class="container">
         <h2>ふうせんの森<h3>
         <h3>～ちょうどよく、うかぶ　きもちよく、うかぶ～</h3>
