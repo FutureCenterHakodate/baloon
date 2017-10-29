@@ -8,6 +8,7 @@
     box-sizing:border-box
   #topview
     +master
+    padding-top: 50px
     grid-gap: 0
     grid-template-columns: 1fr 1fr 1fr
     grid-template-areas: "subTitle cartoon title" "poster poster poster"
@@ -19,8 +20,10 @@
         height: auto
         margin-bottom: 1vh
     h1
+      font-size: 3em
       justify-self: center
     .subTitle
+      font-size: 1.5em
       width: auto
       justify-self: center
       line-height: 1.2em
@@ -33,19 +36,31 @@
     +master
   .playground
     +master
+    padding: 0
+    width: 100%
     .container
       padding: 0
     .message
-      font-size: 1.5em
+      font-size: 1em
   .flex-pic-container
     +master
     margin: 0
   .flex-pic-item
     margin: 0 0 10px 0
     width: 21%
-    height:
+    height: 28vw
   .info-item
     +master
+    margin: 0
+    padding: 0
     flex-flow: column wrap
     h4
-      margin: 20px 0 0 0
+      margin: 20px 0 10px 0
+    p
+      margin: 0
+  .page-top
+    img
+      width: 50px
+  iframe
+    margin: 0 -15%
+    width: 130%
