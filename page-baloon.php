@@ -6,7 +6,7 @@ Template Name: for baloon
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <link rel="stylesheet" type="text/css" href=<?php echo get_stylesheet_directory_uri(); ?>/dest/css/style.css>
+    <link rel="stylesheet" type="text/css" href=<?php echo get_stylesheet_directory_uri(); ?>/baloon-css/style.css>
     <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
@@ -15,10 +15,10 @@ Template Name: for baloon
     <canvas id="canvas">このページはCanvasを使用しています。</canvas>
     <div id="topview">
       <div class="cartoon">
-      <img class="item" src=<?php echo get_template_directory_uri(); ?>/dest/img/baloon01.jpg>
-      <img class="item" src=<?php echo get_template_directory_uri(); ?>/dest/img/baloon02.jpg>
-      <img class="item" src=<?php echo get_template_directory_uri(); ?>/dest/img/baloon03.jpg>
-      <img class="item" src=<?php echo get_template_directory_uri(); ?>/dest/img/baloon04.jpg></div>
+      <img class="item" src=<?php echo get_template_directory_uri(); ?>/baloon-img/baloon01.jpg>
+      <img class="item" src=<?php echo get_template_directory_uri(); ?>/baloon-img/baloon02.jpg>
+      <img class="item" src=<?php echo get_template_directory_uri(); ?>/baloon-img/baloon03.jpg>
+      <img class="item" src=<?php echo get_template_directory_uri(); ?>/baloon-img/baloon04.jpg></div>
       <h1>ふうせんの森</h1>
       <p class="subTitle">
         ちょうどよく、うかぶ。<br>きもちよく、うかぶ。</p>
@@ -103,11 +103,11 @@ Template Name: for baloon
         <p>&copy;深沢アート研究所</p>
       </div>
     </footer>
-    <div class="page-top" id="page-top"><img src=<?php echo get_template_directory_uri(); ?> /dest/img/backToTop.svg">
+    <div class="page-top" id="page-top"><img src=<?php echo get_template_directory_uri(); ?> /baloon-img/backToTop.svg">
     <script>
     
     </script>
     <script>(function() {'use strict';})();</script>
-    <script  id="mainjs" src=<?php echo get_template_directory_uri(); ?>/dest/js/main.js path = "<?php echo get_template_directory_uri();?>" ></script>
+    <script  id="mainjs" src=<?php echo get_template_directory_uri(); ?>/baloon-js/main.js path = "<?php echo get_template_directory_uri();?>" ></script>
   </body>
 </html>
