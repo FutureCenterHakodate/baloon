@@ -51,25 +51,14 @@ Template Name: for baloon
     <div class="background background-white">
       <div class="container">
         <h2>ちょうどよく浮かんだ風船たち</h2>
+        <p>ここには、みんながつくった「ちょうどいい」が集められます</p>
         <div class="flex-pic-container">
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
-          <div class="flex-pic-item"></div>
+          <div class="flex-pic-item"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/activity-baloon.png></div>
+          <div class="flex-pic-item"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/activity-baloon.png></div>
+          <div class="flex-pic-item"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/activity-baloon.png></div>
+          <div class="flex-pic-item"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/activity-baloon.png></div>
+          <div class="flex-pic-item"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/activity-baloon.png></div>
+          <div class="flex-pic-item"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/activity-baloon.png></div>
         </div>
       </div>
     </div>
@@ -103,11 +92,38 @@ Template Name: for baloon
         <p>&copy;深沢アート研究所</p>
       </div>
     </footer>
-    <div class="page-top" id="page-top"><img src=<?php echo get_template_directory_uri(); ?> /baloon-img/backToTop.svg">
-    <script>
-    
-    </script>
+    <div class="page-top" id="page-top"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/backToTop.svg>
     <script>(function() {'use strict';})();</script>
     <script  id="mainjs" src=<?php echo get_template_directory_uri(); ?>/baloon-js/main.js path = "<?php echo get_template_directory_uri();?>" ></script>
   </body>
+  <?php
+  $filename =  "baloon-counter.dat";// counter.datというカウント数を書き込むテキストファイル
+  ?>
+<?php
+  $fp = fopen($filename, "r+"); // counter.datファイルを fopenで開く
+ ?>
+
+<?php
+  $count = fgets($fp,32); // fgets関数でcounter.datに書かれたカウント数を読み込む
+?>
+<?php
+  $count++; // counter.datに書かれたカウント数を加算
+ ?>
+<?php
+  fseek($fp, 0); // fseek関数でcounter.datの読み書きを行う場所を先頭に戻す
+ ?>
+<?php
+  fputs($fp, $count); // fputs関数でカウントされた数をファイルに書き込む
+ ?>
+<?php
+  flock($fp, LOCK_UN); // flock関数でファイルを上書きされないようにロックする
+ ?>
+<?php
+  fclose($fp); // fclose関数でファイルを閉じる
+ ?>
+<?php
+  echo "<!--accessed ";
+  echo $count;
+  echo " -->";// カウントされた数字を表示
+ ?>
 </html>
