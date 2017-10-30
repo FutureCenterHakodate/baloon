@@ -1,6 +1,6 @@
-<?php 
+<?php
 /*
-Template Name: for baloon 
+Template Name: for baloon
 */
 ?>
 <!DOCTYPE html>
@@ -10,6 +10,8 @@ Template Name: for baloon
     <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="robots" content="noindex">
+    <title><?php wp_title(); ?></title>
   </head>
   <body>
     <canvas id="canvas">このページはCanvasを使用しています。</canvas>
@@ -45,7 +47,7 @@ Template Name: for baloon
     <div class="playground playgrond-yetclick" id="playground">
       <div class="container"></div>
       <div class="message">
-        <p>クリックしておもりをのせてみよう！</p>
+        <p>ふうせんにおもりをのせてみよう！</p>
       </div>
     </div>
     <div class="background background-white">
@@ -66,19 +68,19 @@ Template Name: for baloon
       <div class="container">
         <h2>アクセス・ごれんらく</h2>
         <iframe src="https://www.google.com/maps/d/embed?mid=1mUylVVj0RMzRIvoalkNCDq93P-M" width="100%" height="400"></iframe>
-        <div class="info-item"> 
+        <div class="info-item">
           <h4>会場</h4>
           <p>はこだてみらい館 <br> 〒040-0063 北海道函館市若松町20番1号 キラリス函館3F</p>
         </div>
-        <div class="info-item"> 
+        <div class="info-item">
           <h4>開館時間</h4>
           <p>10:00~20:00(入場は19:30まで)</p>
         </div>
-        <div class="info-item"> 
+        <div class="info-item">
           <h4>休館日 </h4>
           <p>年末年始(12/31,1/1) , 館内整理日(毎月第２水曜日)</p>
         </div>
-        <div class="info-item"> 
+        <div class="info-item">
           <h4>施設入館料</h4>
           <p>大人600円, 小中高生 300円, 未就学児無料 <br> ※施設入館料についての詳細は<a href="http://hakodate-miraiproject.jp/FCH/#info_headTitle">こちら(新しいタブで開きます)</a></p>
         </div>
