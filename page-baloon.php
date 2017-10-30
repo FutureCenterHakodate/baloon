@@ -11,7 +11,7 @@ Template Name: for baloon
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="robots" content="noindex">
-    <title><?php wp_title(); ?></title>
+    <title><?php wp_title("はこだてみらい館 |",true);?></title>
   </head>
   <body>
     <canvas id="canvas">このページはCanvasを使用しています。</canvas>
