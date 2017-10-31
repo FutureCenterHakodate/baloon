@@ -35,10 +35,10 @@ Template Name: for baloon
         <h3>～ちょうどよく、うかぶ　きもちよく、うかぶ～</h3>
         <p>はこだてみらい館にふうせんの森ができました。</p>ふうせんの森には様々な大きさの風船が 150 コ浮かんでいます。
         みどりいろの素材で作ったものを風船で浮かべてみましょう。<br><br>
-        <h3>企画・監修：山添Joseph勇(美術家/深沢アート研究所)</h3>現代の子供の「つくる」を研究し、子供造形教室や子供造形ワークショップの実施、子供造形プログラム制作などを主な滑動とする美術家。<br><br>
+        <h3>企画・監修：山添joseph勇(美術家/深沢アート研究所)</h3>現代の子供の「つくる」を研究し、子供造形教室や子供造形ワークショップの実施、子供造形プログラム制作などを主な活動とする美術家。<br><br>
         <h4>深沢アート研究所：</h4>
         <p> <a href="http://www.hukalabo.com/">&lt;http://www.hukalabo.com/ &gt;</a></p>
-        <p>2017年に山添Joseph勇とカブ(美術家/緑化研究者)により、美術館やアートイベントなどで現代アートを基軸とした滑動をするアートユニット。</p>
+        <p>2017年に山添joseph勇とカブ(美術家/緑化研究者)により、美術館やアートイベントなどで現代アートを基軸とした活動をするアートユニット。</p>
       </div>
       <div class="container">
         <p></p>
@@ -66,7 +66,7 @@ Template Name: for baloon
     </div>
     <div class="background background-gray">
       <div class="container">
-        <h2>アクセス・ごれんらく</h2>
+        <h2>アクセス・お問い合わせ</h2>
         <iframe src="https://www.google.com/maps/d/embed?mid=1mUylVVj0RMzRIvoalkNCDq93P-M" width="100%" height="400"></iframe>
         <div class="info-item">
           <h4>会場</h4>
