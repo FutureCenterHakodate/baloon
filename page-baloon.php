@@ -91,7 +91,7 @@ Template Name: for baloon
         <p>&copy;深沢アート研究所</p>
       </div>
     </footer>
-    <div class="page-top" id="page-top"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/backToTop.svg>
+    <div class="page-top" id="page-top"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/backToTop.svg></div>
     <div class="modal-hide" id="modal">
       <p></p>
       <img src="img/baloon01.jpg">
