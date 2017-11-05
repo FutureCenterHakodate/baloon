@@ -92,7 +92,11 @@ Template Name: for baloon
       </div>
     </footer>
     <div class="page-top" id="page-top"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/backToTop.svg>
-    <div id="modal"><img src=""></div>
+    <div class="modal-hide" id="modal">
+      <p></p>
+      <img src="img/baloon01.jpg">
+      <p>×</p>
+    </div>
     <script>(function() {'use strict';})();</script>
     <script  id="mainjs" src=<?php echo get_template_directory_uri(); ?>/baloon-js/main.js path = "<?php echo get_template_directory_uri();?>" ></script>
   </body>
