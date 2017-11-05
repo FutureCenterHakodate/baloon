@@ -58,9 +58,6 @@ Template Name: for baloon
           <div class="flex-pic-item"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/activity/001.jpg></div>
           <div class="flex-pic-item"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/activity/002.jpg></div>
           <div class="flex-pic-item"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/activity/003.jpg></div>
-          <div class="flex-pic-item"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/activity/001.jpg></div>
-          <div class="flex-pic-item"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/activity/001.jpg></div>
-          <div class="flex-pic-item"><img src=<?php echo get_template_directory_uri(); ?>/baloon-img/activity/001.jpg></div>
         </div>
       </div>
     </div>
